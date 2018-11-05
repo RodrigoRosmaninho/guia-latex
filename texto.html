@@ -23,6 +23,17 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23807557-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23807557-2');
+  </script>
+
+
 </head>
 
 <body>
@@ -84,24 +95,29 @@
           <a id="quizLink" href="quiz.html">questionário!</a>
         </div>
 
-        <p>A escrita em LaTeX permite uma manipulação textual tanto a nível dos caractéres introduzidos, como a nível da estruturação
-          de texto. Estas alterações podem ser uma ser uma simples mudança de cor ou então uma mais complexa alteração na
+        <p>A escrita em LaTeX permite uma manipulação textual tanto a nível dos caractéres introduzidos, como a nível
+          da estruturação
+          de texto. Estas alterações podem ser uma ser uma simples mudança de cor ou então uma mais complexa alteração
+          na
           estrutura do texto, como espaçamento entre palavras, criação de listas e/ou tabelas e entre muitas outras.</p>
 
-        <p>Relativamente à estruturação de texto, LaTeX oferece uma grande customização. Desde a formatação de paragráfos até
+        <p>Relativamente à estruturação de texto, LaTeX oferece uma grande customização. Desde a formatação de
+          paragráfos até
           à criação de notas de rodapé, tudo pode ser conseguido com os certos comandos. A formatação de texto em LaTeX
-          é muito customizável, chegando até a ser excessivo. Isto cria um certo grau de dificuldade nesta área. No entanto,
-          o resultado final do texto formatado mostra que o elevado cuidado e atenção à formatação, elevam o documento a
+          é muito customizável, chegando até a ser excessivo. Isto cria um certo grau de dificuldade nesta área. No
+          entanto,
+          o resultado final do texto formatado mostra que o elevado cuidado e atenção à formatação, elevam o documento
+          a
           outro nível de profissionalismo.
         </p>
 
         <br>
         <br>
         <nav class="nav nav-tabs nav-fill" id="subcapitulos" role="tablist">
-          <a class="nav-item nav-link active" id="nav-caracteres-tab" data-toggle="tab" href="#nav-caracteres" role="tab" aria-controls="nav-caracteres"
-            aria-selected="true">Caractéres</a>
-          <a class="nav-item nav-link" id="nav-formatacao-tab" data-toggle="tab" href="#nav-formatacao" role="tab" aria-controls="nav-formatacao"
-            aria-selected="false">Formatação</a>
+          <a class="nav-item nav-link active" id="nav-caracteres-tab" data-toggle="tab" href="#nav-caracteres" role="tab"
+            aria-controls="nav-caracteres" aria-selected="true">Caractéres</a>
+          <a class="nav-item nav-link" id="nav-formatacao-tab" data-toggle="tab" href="#nav-formatacao" role="tab"
+            aria-controls="nav-formatacao" aria-selected="false">Formatação</a>
         </nav>
 
         <div class="tab-content" id="nav-tabContent">
@@ -123,7 +139,8 @@
             <br>
 
             <h5 class="seccao" id="2.1.1">Tamanho da Letra</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
             <p>LaTeX possui uma série de comandos que permitem alterar o tamanho da letra:</p>
             <pre>
@@ -153,7 +170,8 @@ qualquer momento, {\footnotesize sem interrupcoes no texto.}</pre>
 
             <p>Se quiser uma maior liberdade de escolha no tamanho da letra, usando o comando
               <b>\fontsize {</b>tamanho
-              <b>}</b> pode-se alterar o tamanho da letra para o que pretendemos e com uma maior precisão do que os comandos
+              <b>}</b> pode-se alterar o tamanho da letra para o que pretendemos e com uma maior precisão do que os
+              comandos
               rápidos em cima apresentados, demonstrado no exemplo seguinte:</p>
 
             <pre>{\fontsize{50}{60}\selectfont OLA}{\fontsize{5}{6}\selectfont UA!}
@@ -166,7 +184,8 @@ qualquer momento, {\footnotesize sem interrupcoes no texto.}</pre>
 
             <br>
             <h5 class="seccao" id="2.1.2">Fonts</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
             <p>LaTeX também permite o uso de uma grande variedade de fonts. Existem 4 famílias diferentes de fonts:</p>
 
@@ -197,36 +216,45 @@ qualquer momento, {\footnotesize sem interrupcoes no texto.}</pre>
               <li>Tex Gyre</li>
             </ul>
 
-            <p>A escolha de font depnde do utilizador. Se a font for necessária para todo o documento, utiliza-se o comando
+            <p>A escolha de font depnde do utilizador. Se a font for necessária para todo o documento, utiliza-se o
+              comando
               <b>\usepackage{</b>nome da font
-              <b>}</b>. Ao ser ativado este comando, todo o documento irá utilizar a font escolhida. Se não houver qualquer
-              alteração da font, a família de fonts Computer Modern é usada como predefinição. Todas as fonts têm um nome
+              <b>}</b>. Ao ser ativado este comando, todo o documento irá utilizar a font escolhida. Se não houver
+              qualquer
+              alteração da font, a família de fonts Computer Modern é usada como predefinição. Todas as fonts têm um
+              nome
               definido para poder serem usadas no pacote.</p>
 
-            <p>No entanto, se o utilizador apenas quiser mudar a font do documento apenas temporariamente, deverá utilizar o
+            <p>No entanto, se o utilizador apenas quiser mudar a font do documento apenas temporariamente, deverá
+              utilizar o
               comando
               <b>{\fontfamily{</b>código da font
               <b>}\selectfont</b>
               texto pretendido
               <b>}</b>. O "código" de uma font é diferente do "nome" mencionado em cima, para ser utilizado no pacote.</p>
 
-            <p>Por exemplo, a font Latin Modern Roman utiliza o nome de pacote "lmodern", enquanto que o seu código é "lmr".
+            <p>Por exemplo, a font Latin Modern Roman utiliza o nome de pacote "lmodern", enquanto que o seu código é
+              "lmr".
               Mais destes exemplos encontram-se nos fóruns de ajuda da página
               <a href="https://www.sharelatex.com/learn/Font_typefaces#!#Reference_guide">ShareLatex</a>
               (Tópico 3 da página: Reference Guide).</p>
             <br>
             <h5 class="seccao" id="2.1.3">Cor</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
-            <p>LaTeX possui várias funcionalidades relacionadas com a cor, desde o texto até à própria página. Para fazer quaiqueres
+            <p>LaTeX possui várias funcionalidades relacionadas com a cor, desde o texto até à própria página. Para
+              fazer quaiqueres
               mudanças de cor ao documento, é necessário inicializar o pacote de cor, utilizando o comando
               <b>\usepackage{</b>color
               <b>}</b>, (qualquer cor a ser usada posteriormente pelo utilizador não é especificada neste momento).</p>
 
             <p>Para alterar a cor do texto utiliza-se o código
               <b>\color {</b>cor (em inglês) pretendida
-              <b>}</b> . Deve-se ter em atenção o facto de que depois de introduzido o comando, todo o texto será transcrito
-              nessa cor. Para voltar à cor inicial usa-se o mesmo comando mas denominando a cor (em inglês novamente) inical
+              <b>}</b> . Deve-se ter em atenção o facto de que depois de introduzido o comando, todo o texto será
+              transcrito
+              nessa cor. Para voltar à cor inicial usa-se o mesmo comando mas denominando a cor (em inglês novamente)
+              inical
               do documento.</p>
             <pre>
 O texto produzido por este codigo \color{red} ira mudar de vermelho,
@@ -237,7 +265,8 @@ inicial.</pre>
               <figcaption>Cores geradas pelo código exemplo</figcaption>
             </figure>
 
-            <p>LaTeX também permite ao utilizador enfatizar palavras com caixas coloridas . Isto pode ser conseguido atráves
+            <p>LaTeX também permite ao utilizador enfatizar palavras com caixas coloridas . Isto pode ser conseguido
+              atráves
               do código
               <b>\colorbox{</b>cor (em inglês) pretendida
               <b>}</b>seguido do texto que se pretende demarcar, {delimitado por chavetas}.</p>
@@ -251,7 +280,8 @@ caixa da mesma cor, mas o texto tera uma cor diferente.}</pre>
             </figure>
 
             <p>Para uma mais vaste gama de cores, é necessário inicializar um outro package,
-              <b>\usepackage [dvipsnames]{xcolor}</b>. Este substituirá aquele inicialmente mencionado e dará uma maior liberdade
+              <b>\usepackage [dvipsnames]{xcolor}</b>. Este substituirá aquele inicialmente mencionado e dará uma maior
+              liberdade
               de escolha de cores ao utilizador.</p>
             <p>O utilizador poderá definir as suas próprias cores, utilizando o comando
               <b>\definecolor{</b>nome
@@ -269,13 +299,16 @@ caixa da mesma cor, mas o texto tera uma cor diferente.}</pre>
                 <li>HTML</li>
                 <li>cmyk</li>
               </ul>
-              <li>o "espectro" são os valores dados pelo utilizador para criar a cor. Estes valores terão de estar de acordo
-                com os valores válidos para cada modelo e, no caso de existência de vários valores, serão separados por vírgulas.</li>
+              <li>o "espectro" são os valores dados pelo utilizador para criar a cor. Estes valores terão de estar de
+                acordo
+                com os valores válidos para cada modelo e, no caso de existência de vários valores, serão separados por
+                vírgulas.</li>
             </ul>
             <pre>
 \definecolor{cinzento-claro}{gray}{0.50}</pre>
 
-            <p>O código exemplo irá criar uma cor denominada "cinzento-claro, que ficará gravada no documento para uso a qualquer
+            <p>O código exemplo irá criar uma cor denominada "cinzento-claro, que ficará gravada no documento para uso
+              a qualquer
               momento.
             </p>
 
@@ -286,7 +319,8 @@ caixa da mesma cor, mas o texto tera uma cor diferente.}</pre>
 
             <br>
             <h5 class="seccao" id="2.1.4">Outras Tranformações</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
             <p>
               <font size="5">
@@ -349,42 +383,53 @@ caixa da mesma cor, mas o texto tera uma cor diferente.}</pre>
             <br>
 
             <h5 class="seccao" id="2.2.1">Parágrafos</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
-            <p>Parágrafos podem ser definidos na raiz do domcumento antes de se ter começado a redigir. Isto significa que alguns
-              comandos terão de ser inicializados tal como uma package. São 3 os comandos essenciais para a formatação de
+            <p>Parágrafos podem ser definidos na raiz do domcumento antes de se ter começado a redigir. Isto significa
+              que alguns
+              comandos terão de ser inicializados tal como uma package. São 3 os comandos essenciais para a formatação
+              de
               parágrafos:
             </p>
 
             <p>
               <b>\setlenght {\parindent}{</b>valor
-              <b>}</b>; Este comando seleciona o comprimento desde a Margem da página até ao início do parágrafo; O valor vem
-              normalmente em unidades "em" que é a distância que um "M" maiúsculo na font definida ocupa. Ou seja, 4em ocupa
+              <b>}</b>; Este comando seleciona o comprimento desde a Margem da página até ao início do parágrafo; O
+              valor vem
+              normalmente em unidades "em" que é a distância que um "M" maiúsculo na font definida ocupa. Ou seja, 4em
+              ocupa
               um espaço equivalente a "MMMM".</p>
             <p>
               <b>\setlenght {\parskip}{</b>valor
-              <b>}</b>; Este comando define o espaço entre cada parágrafo, quando um é introduzido; O valor vem também em unidades
+              <b>}</b>; Este comando define o espaço entre cada parágrafo, quando um é introduzido; O valor vem também
+              em unidades
               "em".
             </p>
             <p>
               <b>\renewcommand {\baselinestretch}{</b>valor
-              <b>}</b>. Este comando define o espaçamento entre as linhas do documento; Este valor pode ser qualquer número.
+              <b>}</b>. Este comando define o espaçamento entre as linhas do documento; Este valor pode ser qualquer
+              número.
             </p>
 
-            <p>Todos este comandos são, normalmente, inicializados junto dos packages, no entanto, o utilizador poderá querer
-              usar ou definir diferentes tamanhos para qualquer um dos parâmetros numa certa localização do documento. Para
+            <p>Todos este comandos são, normalmente, inicializados junto dos packages, no entanto, o utilizador poderá
+              querer
+              usar ou definir diferentes tamanhos para qualquer um dos parâmetros numa certa localização do documento.
+              Para
               isso, basta reescrever o(s) comando(s) no local desejado.
             </p>
             <br>
             <br>
 
             <h5 class="seccao" id="2.2.2">Breaks</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
             <ul class="tex">
               <li>Linhas</li>
               <ul>
-                <li>Breaks de linhas são utilizados para mudar de linha sem que esta faça a marca de parágrafo automaticamente;</li>
+                <li>Breaks de linhas são utilizados para mudar de linha sem que esta faça a marca de parágrafo
+                  automaticamente;</li>
                 <li>Isto é feito através da colocação de -
                   <b>\\</b> ou
                   <b>\newline</b> - no final da linha que queremos terminar.
@@ -392,7 +437,8 @@ caixa da mesma cor, mas o texto tera uma cor diferente.}</pre>
               </ul>
               <li>Páginas</li>
               <ul>
-                <li>Tal como os Breaks de linhas, mas convertidos para páginas, estes Breaks fazem com que o documento mude para
+                <li>Tal como os Breaks de linhas, mas convertidos para páginas, estes Breaks fazem com que o documento
+                  mude para
                   a seguinte página, deixando o resto da página corrente em branco.</li>
                 <li>Isto é conseguido através do código
                   <b>\clearpage</b>
@@ -403,18 +449,22 @@ caixa da mesma cor, mas o texto tera uma cor diferente.}</pre>
             <br>
 
             <h5 class="seccao" id="2.2.3">Preenchimento de Linhas</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
             <ul class="tex">
               <li>Preenchimento Horizontal</li>
               <ul>
-                <li>O preenchimento horizontal de linhas coloca um espaço em branco da maneira que o utilizador desejar;</li>
+                <li>O preenchimento horizontal de linhas coloca um espaço em branco da maneira que o utilizador
+                  desejar;</li>
                 <li>O comando
                   <b>\hspace{</b>valor
-                  <b>}</b> preenche horizontalmente com um espaço em branco do tamanho do valor introduzido pelo redator (este
+                  <b>}</b> preenche horizontalmente com um espaço em branco do tamanho do valor introduzido pelo
+                  redator (este
                   valor pode ser escrito em qualquer unidade suportada por LaTeX);</li>
                 <li>O comando
-                  <b>\hfill</b> preenche com um espaço em branco, também horizontalmente, o restante espaço não ocupado na linha;</li>
+                  <b>\hfill</b> preenche com um espaço em branco, também horizontalmente, o restante espaço não ocupado
+                  na linha;</li>
               </ul>
               <li>Preenchimento Vertical</li>
               <ul>
@@ -431,11 +481,15 @@ caixa da mesma cor, mas o texto tera uma cor diferente.}</pre>
             <br>
 
             <h5 class="seccao" id="2.2.4">Alinhamento Textual</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
-            <p>Para o alinhamento de texto, LaTeX possui um conjunto de comandos que permite uma estruturação bem definida.
-              No entanto a package ragged2e dá outro ambiente aos comandos de alinhamento e, também muito importante, faz
-              com que hífens possam ser justificados e alinhados corretamente. Para isto, é necessário iniciar a package,
+            <p>Para o alinhamento de texto, LaTeX possui um conjunto de comandos que permite uma estruturação bem
+              definida.
+              No entanto a package ragged2e dá outro ambiente aos comandos de alinhamento e, também muito importante,
+              faz
+              com que hífens possam ser justificados e alinhados corretamente. Para isto, é necessário iniciar a
+              package,
               com o comando
               <b>\usepackage{</b>ragged2e
               <b>}</b>.</p>
@@ -446,8 +500,10 @@ caixa da mesma cor, mas o texto tera uma cor diferente.}</pre>
               </font>
             </p>
             <p>O comando para uma justificação à esquerda, utilizando o ambiente ragged2e é
-              <b>\FlushLeft</b>> . Para utilizar uma justificação à esquerda para todo o documento utiliza-se um comando switch,
-              que depois de ativado, apenas é desativado com um outro comando tipo switch. Isto é útil para grande blocos
+              <b>\FlushLeft</b>> . Para utilizar uma justificação à esquerda para todo o documento utiliza-se um
+              comando switch,
+              que depois de ativado, apenas é desativado com um outro comando tipo switch. Isto é útil para grande
+              blocos
               de texto ou o documento inteiro. Neste caso o comando é
               <b>\RaggedRight</b> (
               <b>NOTA:</b>
@@ -459,7 +515,8 @@ caixa da mesma cor, mas o texto tera uma cor diferente.}</pre>
               </font>
             </p>
             <p>O comando para uma justificação à direita, é
-              <b>\FlushRight</b> . Utilizando novamente o comando switch, mas desta vez, destinado a uma justificação à direita.
+              <b>\FlushRight</b> . Utilizando novamente o comando switch, mas desta vez, destinado a uma justificação à
+              direita.
               Neste caso o comando é
               <b>\RaggedLeft</b> (
               <b>NOTA:</b> O mesmo acontece com este comando!).</p>
@@ -470,7 +527,8 @@ caixa da mesma cor, mas o texto tera uma cor diferente.}</pre>
               </font>
             </p>
             <p>O comando para uma justificação ao centro, é
-              <b>\Center</b>. Novamente, tal como nos dois casos prévios existem comandos switch . Neste caso o comando é
+              <b>\Center</b>. Novamente, tal como nos dois casos prévios existem comandos switch . Neste caso o comando
+              é
               <b>\Centering</b> (NOTA: O mesmo acontece com este comando!).</p>
 
             <p>
@@ -478,22 +536,27 @@ caixa da mesma cor, mas o texto tera uma cor diferente.}</pre>
                 <b>Justificação Total</b>
               </font>
             </p>
-            <p>O ambiente ragged2e também possúi um método de total justificação do documento. Isto é possível através do código
+            <p>O ambiente ragged2e também possúi um método de total justificação do documento. Isto é possível através
+              do código
               <b>\justify</b>.</p>
 
             <br>
             <br>
 
             <h5 class="seccao" id="2.2.5">Notas de Rodapé</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
-            <p>Por vezes, em alguns documentos é necessário a utilização de notas de rodapé. Estas também podem ser criadas
+            <p>Por vezes, em alguns documentos é necessário a utilização de notas de rodapé. Estas também podem ser
+              criadas
               em LaTeX. Para isto usamos o comando
               <b>\footnote[número de nota]{</b>nota a acrescentar
               <b>}</b>. Ao ler o ficheiro
-              <b>.tex</b>, ter as notas próximas do texto principal pode mostrar-se um pouco confuso. Para não ocorrer esse
+              <b>.tex</b>, ter as notas próximas do texto principal pode mostrar-se um pouco confuso. Para não ocorrer
+              esse
               problema usa-se o comando
-              <b>\footnotemark</b> . Este comando marca uma nota de roda pé. Para mais tarde aceder a essa nota usa-se o comando
+              <b>\footnotemark</b> . Este comando marca uma nota de roda pé. Para mais tarde aceder a essa nota usa-se
+              o comando
               <b>\footnotetext{</b>nota a acrescentar
               <b>}</b>. Este comando pode ser colocado em qualquer lado do documento
               <b>.tex</b>. Isto desde que mais nenhuma nota de roda pé tenha sido ainda marcada.</p>

@@ -23,6 +23,17 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23807557-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23807557-2');
+  </script>
+
+
 </head>
 
 <body>
@@ -86,7 +97,8 @@
 
         <p>Ao elaborar qualquer tipo de documento em LaTeX é importante saber a estrutura a que o ficheiro
           <b>.tex</b> em causa deve obedecer. Ou seja, os comandos indispensáveis à realização de um relatório. </p>
-        <p>Para além disso, existem comandos para alterar a estrutura e hierarquia do documento em si, como, por exemplo:</p>
+        <p>Para além disso, existem comandos para alterar a estrutura e hierarquia do documento em si, como, por
+          exemplo:</p>
         <ul class="tex">
           <li>Páginas de Capa</li>
           <li>Índices</li>
@@ -98,12 +110,12 @@
         <br>
         <br>
         <nav class="nav nav-tabs nav-fill" id="subcapitulos" role="tablist">
-          <a class="nav-item nav-link active" id="nav-ficheiro-tab" data-toggle="tab" href="#nav-ficheiro" role="tab" aria-controls="nav-ficheiro"
-            aria-selected="true">Estrutura de um ficheiro
+          <a class="nav-item nav-link active" id="nav-ficheiro-tab" data-toggle="tab" href="#nav-ficheiro" role="tab"
+            aria-controls="nav-ficheiro" aria-selected="true">Estrutura de um ficheiro
             <b>.tex</b>
           </a>
-          <a class="nav-item nav-link" id="nav-documento-tab" data-toggle="tab" href="#nav-documento" role="tab" aria-controls="nav-documento"
-            aria-selected="false">Estrutura do documento</a>
+          <a class="nav-item nav-link" id="nav-documento-tab" data-toggle="tab" href="#nav-documento" role="tab"
+            aria-controls="nav-documento" aria-selected="false">Estrutura do documento</a>
         </nav>
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-ficheiro" role="tabpanel" aria-labelledby="nav-ficheiro-tab">
@@ -123,7 +135,8 @@
             <br>
 
             <h5 class="seccao" id="1.1.1">documentclass</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
             <p>Todos os documentos em LaTeX têm que conter os comandos:</p>
             <pre>
@@ -185,7 +198,8 @@
 
             <p>Para além destas classes pré-incluídas no LaTeX existem outras que são desenvolvidas por terceiros.</p>
 
-            <p>Apesar de ter que escolher um classe de documento, o utilizador tem a liberdade de alterar algumas definições
+            <p>Apesar de ter que escolher um classe de documento, o utilizador tem a liberdade de alterar algumas
+              definições
               específicas. Algumas dessas opções incluídas no LaTeX constam na tabela seguinte:</p>
 
             <table class="table">
@@ -236,7 +250,8 @@
               <caption>Algumas opções do comando \documentclass</caption>
             </table>
 
-            <p>Por exemplo, se for preciso um relatório com páginas A4, fonte de tamanho 12pt, orientação em modo paisagem,
+            <p>Por exemplo, se for preciso um relatório com páginas A4, fonte de tamanho 12pt, orientação em modo
+              paisagem,
               e sem titlepage, devemos usar o comando
               <b>\documentclass</b> deste modo:</p>
 
@@ -245,17 +260,22 @@
 
             <br>
             <h5 class="seccao" id="1.1.2">Uso de packages</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
-            <p>Ao elaborar um documento, podem surgir problemas que as ferramentas do LaTeX base não conseguem resolver. Como,
-              por exemplo, a inclusão de gráficos, texto colorido, ou blocos de código. A solução para estes problemas consiste
-              na utilização de packages. Algumas packages estão incluídas no LaTeX base, enquanto que outras são disponibilizadas
+            <p>Ao elaborar um documento, podem surgir problemas que as ferramentas do LaTeX base não conseguem
+              resolver. Como,
+              por exemplo, a inclusão de gráficos, texto colorido, ou blocos de código. A solução para estes problemas
+              consiste
+              na utilização de packages. Algumas packages estão incluídas no LaTeX base, enquanto que outras são
+              disponibilizadas
               separadamente. O comando para incluir uma determinada package num documento é o seguinte:</p>
 
             <pre>
 \usepackage[options]{package}</pre>
 
-            <p>Em que ’package’ e o nome da package pretendida e ’options’ a lista de opcoes extra que o utilizador quer definir.
+            <p>Em que ’package’ e o nome da package pretendida e ’options’ a lista de opcoes extra que o utilizador
+              quer definir.
               Este comando é colocado na secção do ficheiro
               <b>.tex</b> entre os comandos
               <b>\documentclass</b> e
@@ -268,9 +288,11 @@
 
             <br>
             <h5 class="seccao" id="1.1.3">Top Matter</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
-            <p>No início da maioria dos documentos é declarado um conjunto de informações importantes acerca do documento como:</p>
+            <p>No início da maioria dos documentos é declarado um conjunto de informações importantes acerca do
+              documento como:</p>
 
             <ul class="tex">
               <li>Título</li>
@@ -280,7 +302,8 @@
               <li>Entre outros, ...</li>
             </ul>
 
-            <p>Todo este tipo de informação é referido coletivamente como top matter. O exemplo seguinte demonstra uma implementação
+            <p>Todo este tipo de informação é referido coletivamente como top matter. O exemplo seguinte demonstra uma
+              implementação
               simples de alguns dos comandos referidos:</p>
 
             <pre>
@@ -292,7 +315,8 @@
 \maketitle</pre>
 
             <p>Como se pode verificar, a Top Matter deve ser terminada com o comando
-              <b>\maketitle</b> , que concretiza a informação previamente numa página de capa gerada automaticamente pelo LaTeX.</p>
+              <b>\maketitle</b> , que concretiza a informação previamente numa página de capa gerada automaticamente
+              pelo LaTeX.</p>
 
           </div>
           <div class="tab-pane fade" id="nav-documento" role="tabpanel" aria-labelledby="nav-documento-tab">
@@ -313,11 +337,15 @@
             <br>
             <br>
             <h5 class="seccao" id="1.2.1">Capítulos, Secções, e Subsecções</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
-            <p>O LaTeX permite a elaboração de documentos com estrutura organizada e bem definida de forma simples. Dependendo
-              da classe do documento, a estrutura divide-se em Partes (o nível mais abrangente da hierarquia), Capítulos,
-              Secções, Subsecções, Subsubsecções, Parágrafos, e Subparágrafos (o nível menos abrangente da hierarquia). Algumas
+            <p>O LaTeX permite a elaboração de documentos com estrutura organizada e bem definida de forma simples.
+              Dependendo
+              da classe do documento, a estrutura divide-se em Partes (o nível mais abrangente da hierarquia),
+              Capítulos,
+              Secções, Subsecções, Subsubsecções, Parágrafos, e Subparágrafos (o nível menos abrangente da hierarquia).
+              Algumas
               destas estruturas podem ser verificadas no exemplo seguinte:</p>
 
             <pre id="hierarquia">
@@ -327,9 +355,11 @@
 
             <p>De notar o comando
               <b>\label{id}</b> , (em que
-              <b>id</b> constitui um identificador à escolha do utilizador) que permite que o capítulo seja mais tarde referenciado
+              <b>id</b> constitui um identificador à escolha do utilizador) que permite que o capítulo seja mais tarde
+              referenciado
               para interligar tópicos, através do comando
-              <b>\ref{id}</b> O código apresentado anteriormente traduz-se na quebra da página atual e aparecimento da estrutura
+              <b>\ref{id}</b> O código apresentado anteriormente traduz-se na quebra da página atual e aparecimento da
+              estrutura
               seguinte:
             </p>
 
@@ -338,17 +368,21 @@
               <figcaption>Hierarquia gerada pelo código exemplo</figcaption>
             </figure>
 
-            <p>Como se pode ver, a hierarquia é bem distinta e apareceu numerada de forma organizada e automática. Esta funcionalidade
+            <p>Como se pode ver, a hierarquia é bem distinta e apareceu numerada de forma organizada e automática. Esta
+              funcionalidade
               simplifica muito todo o processo de organização de um documento.</p>
 
             <br>
             <h5 class="seccao" id="1.2.2">Índice Remissivo</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
-            <p>Tal como a numeração de toda hierarquia, o LaTeX é capaz de automatizar todo o processo de elaboração de um índice.
+            <p>Tal como a numeração de toda hierarquia, o LaTeX é capaz de automatizar todo o processo de elaboração de
+              um índice.
               Apenas é necessária a introdução de um comando:
               <b>\tableofcontents</b> .</p>
-            <p>Alternativamente, este comando pode também ser invocado com várias opções de modo a customizar o índice para
+            <p>Alternativamente, este comando pode também ser invocado com várias opções de modo a customizar o índice
+              para
               obter o formato desejado. As hierarquia descrita
               <a href="#hierarquia">neste exemplo</a> apareceria num índice automático da seguinte forma:</p>
 
@@ -359,9 +393,11 @@
 
             <br>
             <h5 class="seccao" id="1.2.3">Lista de figuras / tabelas</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
-            <p>Tal como o que acontece com os capítulos, secções, subsecções e o respetico índice remissivo, o LaTeX é capaz
+            <p>Tal como o que acontece com os capítulos, secções, subsecções e o respetico índice remissivo, o LaTeX é
+              capaz
               de numerar automaticamente todas as tabelas e figuras do documento e apresentá-las em forma de lista.</p>
 
             <p>Os comandos para apresentar estas listas são, como no caso do índice, muito simples:
@@ -376,15 +412,19 @@
 
             <br>
             <h5 class="seccao" id="1.2.4">Glossário / Acrónimos</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
-            <p>Ao escrever um documento que contem alguns termos com significado específico é conveniente adicionar ao mesmo
-              um glossário. O glossário consiste numa lista de termos pouco conhecidos ou específicos de uma certa área,
+            <p>Ao escrever um documento que contem alguns termos com significado específico é conveniente adicionar ao
+              mesmo
+              um glossário. O glossário consiste numa lista de termos pouco conhecidos ou específicos de uma certa
+              área,
               e as suas definições. Primeiro, é necessário que se invoque a package relevante:</p>
 
             <pre>\usepackage{glossaries}</pre>
 
-            <p>Ou, para o caso de se necessitar de apresentar também uma página semelhante à do glossário mas com o intuito
+            <p>Ou, para o caso de se necessitar de apresentar também uma página semelhante à do glossário mas com o
+              intuito
               de apresentar as definições de todos os acrónimos utilizados ao longo do documento:</p>
 
             <pre>\usepackage[acronym]{glossaries}</pre>
@@ -415,11 +455,14 @@
 
             <br>
             <h5 class="seccao" id="1.2.5">Bibliografia</h5>
-            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir para o índice</button>
+            <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#subcapitulos'">Ir
+              para o índice</button>
 
-            <p>O LaTeX inclui um suporte de bibliografias compreensivo, com o qual se pode guardar as referências das citações
+            <p>O LaTeX inclui um suporte de bibliografias compreensivo, com o qual se pode guardar as referências das
+              citações
               no próprio documento ou num à parte (ficheiro
-              <b>.bib</b>). Esta funcionalidade é extremamente importante para a eleboração de relatórios sérios que necessitem
+              <b>.bib</b>). Esta funcionalidade é extremamente importante para a eleboração de relatórios sérios que
+              necessitem
               de citações.</p>
 
             <p>Exemplo de sintaxe utilizada no ficheiro
@@ -452,7 +495,8 @@ Texto exemplo para demonstracao da funcionalidade de citacao
             </figure>
 
             <p>Assim, conclui-se que é possivel efetuar citações com o comando
-              <b>\cite{nome-da-entrada-da-db}</b>, desde que exista uma entrada correspondente na base de dados presente no
+              <b>\cite{nome-da-entrada-da-db}</b>, desde que exista uma entrada correspondente na base de dados
+              presente no
               ficheiro
               <b>.bib</b>
             </p>

@@ -27,6 +27,17 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
   <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23807557-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23807557-2');
+  </script>
+
+
 </head>
 
 <body>
@@ -92,13 +103,13 @@
         <br>
 
         <nav class="nav nav-tabs nav-fill" id="subcapitulos" role="tablist">
-          <a class="nav-item nav-link active" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info"
-            aria-selected="true">Informação
+          <a class="nav-item nav-link active" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab"
+            aria-controls="nav-info" aria-selected="true">Informação
           </a>
-          <a class="nav-item nav-link" id="nav-agradecimentos-tab" data-toggle="tab" href="#nav-agradecimentos" role="tab" aria-controls="nav-agradecimentos"
-            aria-selected="false">Agradecimentos</a>
-          <a class="nav-item nav-link" id="nav-biblio-tab" data-toggle="tab" href="#nav-biblio" role="tab" aria-controls="nav-biblio"
-            aria-selected="false">Conteúdos externos</a>
+          <a class="nav-item nav-link" id="nav-agradecimentos-tab" data-toggle="tab" href="#nav-agradecimentos" role="tab"
+            aria-controls="nav-agradecimentos" aria-selected="false">Agradecimentos</a>
+          <a class="nav-item nav-link" id="nav-biblio-tab" data-toggle="tab" href="#nav-biblio" role="tab"
+            aria-controls="nav-biblio" aria-selected="false">Conteúdos externos</a>
         </nav>
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
@@ -117,8 +128,9 @@
                         <br>
                         <a href="mailto:r.rosmaninho@ua.pt">r.rosmaninho@ua.pt</a>
                       </p>
-                      <a tabindex="0" class="btn btn-primary" role="button" data-html="true" data-trigger="focus" data-placement="bottom" data-toggle="popover"
-                        title="Contribuições" data-content="<ul><li>Página estrutura.html</li><li>Página matematica.html</li><li>Página about.html</li><li>Página quiz.html e código javascript (quiz.js)</li></ul><hr><p class='center'>Percentagem de colaboração:</p><div align='center'><h5 style='color: #0099ff;'>50%</h5></div><br>">Ver contribuições</a>
+                      <a tabindex="0" class="btn btn-primary" role="button" data-html="true" data-trigger="focus"
+                        data-placement="bottom" data-toggle="popover" title="Contribuições" data-content="<ul><li>Página estrutura.html</li><li>Página matematica.html</li><li>Página about.html</li><li>Página quiz.html e código javascript (quiz.js)</li></ul><hr><p class='center'>Percentagem de colaboração:</p><div align='center'><h5 style='color: #0099ff;'>50%</h5></div><br>">Ver
+                        contribuições</a>
                     </div>
                   </div>
                 </div>
@@ -132,8 +144,9 @@
                         <br>
                         <a href="mailto:jorgemcsilva99@ua.pt">jorgemcsilva99@ua.pt</a>
                       </p>
-                      <a tabindex="0" class="btn btn-primary" role="button" data-html="true" data-trigger="focus" data-placement="bottom" data-toggle="popover"
-                        title="Contribuições" data-content="<ul><li>Página texto.html</li><li>Página extras.html</li><li>Página index.html</li><li>Questões e respostas para o quiz (perguntas.json)</li></ul><hr><p class='center'>Percentagem de colaboração:</p><div align='center'><h5 style='color: #0099ff;'>50%</h5></div><br>">Ver contribuições</a>
+                      <a tabindex="0" class="btn btn-primary" role="button" data-html="true" data-trigger="focus"
+                        data-placement="bottom" data-toggle="popover" title="Contribuições" data-content="<ul><li>Página texto.html</li><li>Página extras.html</li><li>Página index.html</li><li>Questões e respostas para o quiz (perguntas.json)</li></ul><hr><p class='center'>Percentagem de colaboração:</p><div align='center'><h5 style='color: #0099ff;'>50%</h5></div><br>">Ver
+                        contribuições</a>
                     </div>
                   </div>
                 </div>
@@ -179,14 +192,17 @@
             <p>Gostaríamos de agradeçer a:</p>
             <ul>
               <li>
-                <b>Associação de Eletrónica, Telecomunicações, e Telemática da Universidade de Aveiro (AETTUA) e Professor Miguel
+                <b>Associação de Eletrónica, Telecomunicações, e Telemática da Universidade de Aveiro (AETTUA) e
+                  Professor Miguel
                   Oliveira e Silva</b>
-                <br>pelos workshops de LaTeX que ocorreram nos dias 14 e 21 de Novembro, e que nos ajudaram muito na realização
+                <br>pelos workshops de LaTeX que ocorreram nos dias 14 e 21 de Novembro, e que nos ajudaram muito na
+                realização
                 deste trabalho.</li>
               <br>
               <li>
                 <b>Professor Auxiliar António Manuel Adrego da Rocha</b>
-                <br>pelas aulas elucidantes que nos foram dadas sobre LaTeX, HTML, CSS, e Javascript, sem as quais não conseguiríamos
+                <br>pelas aulas elucidantes que nos foram dadas sobre LaTeX, HTML, CSS, e Javascript, sem as quais não
+                conseguiríamos
                 ter completado este projeto.
               </li>
               <br>
@@ -206,8 +222,10 @@
             <p>Para a realização de este projeto foram utilizados alguns recursos externos:</p>
 
             <h5>Template Bootstrap</h5>
-            <p>De acordo com o ficheiro 'Frequently Asked Questions' presente na secção relativa ao Projeto 1 do e-learning,
-              foi-nos permitida a utilização de qualquer template público, desde que tal fosse explicitado na página 'acerca'
+            <p>De acordo com o ficheiro 'Frequently Asked Questions' presente na secção relativa ao Projeto 1 do
+              e-learning,
+              foi-nos permitida a utilização de qualquer template público, desde que tal fosse explicitado na página
+              'acerca'
               do nosso website.</p>
             <p>Como tal, usámos parte de um template bootstrap disponível
               <a href="https://startbootstrap.com/template-overviews/clean-blog/">neste link</a>
@@ -225,7 +243,8 @@
 
             <br>
             <h5>Imagens</h5>
-            <p>Todas as imagens presentes neste website foram obra dos autores ou obtidas de websites pertencentes à Universidade
+            <p>Todas as imagens presentes neste website foram obra dos autores ou obtidas de websites pertencentes à
+              Universidade
               de Aveiro.</p>
 
             <br>
@@ -235,65 +254,81 @@
 
             <ol>
               <li>
-                <a href="https://en.wikibooks.org/wiki/LaTeX/Document_Structure">en.wikibooks.org, LaTeX/Document Structure</a>, acedido em Novembro de 2017
+                <a href="https://en.wikibooks.org/wiki/LaTeX/Document_Structure">en.wikibooks.org, LaTeX/Document
+                  Structure</a>, acedido em Novembro de 2017
               </li>
               <br>
               <li>
-                <a href="https://pt.sharelatex.com/learn/Glossaries">sharelatex.com, Glossaries</a>, acedido em Novembro de 2017
+                <a href="https://pt.sharelatex.com/learn/Glossaries">sharelatex.com, Glossaries</a>, acedido em
+                Novembro de 2017
               </li>
               <br>
               <li>
-                <a href="https://pt.sharelatex.com/learn/Bibliography_management_in_LaTeX">sharelatex.com, Bibliography management in LaTeX</a>, acedido em Novembro de 2017
+                <a href="https://pt.sharelatex.com/learn/Bibliography_management_in_LaTeX">sharelatex.com, Bibliography
+                  management in LaTeX</a>, acedido em Novembro de 2017
               </li>
               <br>
               <li>
-                <a href="https://elearning.ua.pt">João Paulo Barraca, Diogo Gomes, André Zúquete, João Manuel Rodrigues, António Adrego da Rocha, Tomás Oliveira
-                  e Silva, Sílvia Rodrigues e Óscar Pereira, LABI Guião 3 - Produção de documentos com LATEX</a>, acedido
+                <a href="https://elearning.ua.pt">João Paulo Barraca, Diogo Gomes, André Zúquete, João Manuel
+                  Rodrigues, António Adrego da Rocha, Tomás Oliveira
+                  e Silva, Sílvia Rodrigues e Óscar Pereira, LABI Guião 3 - Produção de documentos com LATEX</a>,
+                acedido
                 em Novembro de 2017
               </li>
               <br>
               <li>
-                <a href="https://pt.sharelatex.com/learn/Font_sizes,_families,_and_styles">sharelatex.com, Fonts</a>, acedido em Novembro de 2017
+                <a href="https://pt.sharelatex.com/learn/Font_sizes,_families,_and_styles">sharelatex.com, Fonts</a>,
+                acedido em Novembro de 2017
               </li>
               <br>
               <li>
-                <a href="https://en.wikibooks.org/wiki/LaTeX/Colors">en.wikibooks.org, LaTeX/Colors</a>, acedido em Novembro de 2017
+                <a href="https://en.wikibooks.org/wiki/LaTeX/Colors">en.wikibooks.org, LaTeX/Colors</a>, acedido em
+                Novembro de 2017
               </li>
               <br>
               <li>
-                <a href="https://en.wikibooks.org/wiki/LaTeX/Fonts">en.wikibooks.org, LaTeX/Fonts</a>, acedido em Novembro de 2017
+                <a href="https://en.wikibooks.org/wiki/LaTeX/Fonts">en.wikibooks.org, LaTeX/Fonts</a>, acedido em
+                Novembro de 2017
               </li>
               <br>
               <li>
-                <a href="https://en.wikibooks.org/wiki/LaTeX/Paragraph_Formatting">en.wikibooks.org, LaTeX/Paragraph Formatting</a>, acedido em Novembro de 2017
+                <a href="https://en.wikibooks.org/wiki/LaTeX/Paragraph_Formatting">en.wikibooks.org, LaTeX/Paragraph
+                  Formatting</a>, acedido em Novembro de 2017
               </li>
               <br>
               <li>
-                <a href="https://pt.sharelatex.com/learn/Line_breaks_and_blank_spaces">sharelatex.com, Line breaks and blank spaces</a>, acedido em Novembro de 2017
+                <a href="https://pt.sharelatex.com/learn/Line_breaks_and_blank_spaces">sharelatex.com, Line breaks and
+                  blank spaces</a>, acedido em Novembro de 2017
               </li>
               <br>
               <li>
-                <a href="https://en.wikibooks.org/wiki/LaTeX/Footnotes_and_Margin_Notes">en.wikibooks.org, LaTeX/Footnotes and Margin Notes</a>, acedido em Novembro de 2017
+                <a href="https://en.wikibooks.org/wiki/LaTeX/Footnotes_and_Margin_Notes">en.wikibooks.org,
+                  LaTeX/Footnotes and Margin Notes</a>, acedido em Novembro de 2017
               </li>
               <br>
               <li>
-                <a href="https://pt.sharelatex.com/learn/Mathematical_expressions">sharelatex.com, Mathematical expressions</a>, acedido em Novembro de 2017
+                <a href="https://pt.sharelatex.com/learn/Mathematical_expressions">sharelatex.com, Mathematical
+                  expressions</a>, acedido em Novembro de 2017
               </li>
               <br>
               <li>
-                <a href="https://pt.sharelatex.com/learn/List_of_Greek_letters_and_math_symbols">sharelatex.com, List of Greek letters and math symbols</a>, acedido em Novembro de 2017
+                <a href="https://pt.sharelatex.com/learn/List_of_Greek_letters_and_math_symbols">sharelatex.com, List
+                  of Greek letters and math symbols</a>, acedido em Novembro de 2017
               </li>
               <br>
               <li>
-                <a href="https://pt.sharelatex.com/learn/Tables">sharelatex.com, Tables</a>, acedido em Novembro de 2017
+                <a href="https://pt.sharelatex.com/learn/Tables">sharelatex.com, Tables</a>, acedido em Novembro de
+                2017
               </li>
               <br>
               <li>
-                <a href="https://pt.sharelatex.com/learn/Inserting_Images">sharelatex.com, Inserting Images, LaTeX/Document Structure</a>, acedido em Novembro de 2017
+                <a href="https://pt.sharelatex.com/learn/Inserting_Images">sharelatex.com, Inserting Images,
+                  LaTeX/Document Structure</a>, acedido em Novembro de 2017
                 <br><br>
               </li>
               <li>
-                <a href="http://www.cebc.cnrs.fr/publipdf/2009/BTS24_2009.pdf">cebc.cnrs.fr, Don't format manuscripts</a>, acedido em Janeiro de 2018
+                <a href="http://www.cebc.cnrs.fr/publipdf/2009/BTS24_2009.pdf">cebc.cnrs.fr, Don't format manuscripts</a>,
+                acedido em Janeiro de 2018
               </li>
             </ol>
 

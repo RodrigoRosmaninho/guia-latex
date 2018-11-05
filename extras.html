@@ -23,6 +23,17 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23807557-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23807557-2');
+  </script>
+
+
 </head>
 
 <body>
@@ -84,17 +95,18 @@
           <a id="quizLink" href="quiz.html">questionário!</a>
         </div>
 
-        <p>LaTeX, como sistema de preparação de texto, possúi também maneiras para criar listas, tabelas e gráficos. E tal como
+        <p>LaTeX, como sistema de preparação de texto, possúi também maneiras para criar listas, tabelas e gráficos. E
+          tal como
           todas as outras funcionalidades, estas também estão munidas de um elevado grau de customização. </p>
         <br>
         <br>
         <nav class="nav nav-tabs nav-fill" id="subcapitulos" role="tablist">
-          <a class="nav-item nav-link active" id="nav-listas-tab" data-toggle="tab" href="#nav-listas" role="tab" aria-controls="nav-listas"
-            aria-selected="true">Listas</a>
-          <a class="nav-item nav-link" id="nav-tabelas-tab" data-toggle="tab" href="#nav-tabelas" role="tab" aria-controls="nav-tabelas"
-            aria-selected="false">Tabelas</a>
-          <a class="nav-item nav-link" id="nav-imagens-tab" data-toggle="tab" href="#nav-imagens" role="tab" aria-controls="nav-imagens"
-            aria-selected="false">Imagens</a>
+          <a class="nav-item nav-link active" id="nav-listas-tab" data-toggle="tab" href="#nav-listas" role="tab"
+            aria-controls="nav-listas" aria-selected="true">Listas</a>
+          <a class="nav-item nav-link" id="nav-tabelas-tab" data-toggle="tab" href="#nav-tabelas" role="tab"
+            aria-controls="nav-tabelas" aria-selected="false">Tabelas</a>
+          <a class="nav-item nav-link" id="nav-imagens-tab" data-toggle="tab" href="#nav-imagens" role="tab"
+            aria-controls="nav-imagens" aria-selected="false">Imagens</a>
         </nav>
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-listas" role="tabpanel" aria-labelledby="nav-listas-tab">
@@ -132,8 +144,10 @@
               <figcaption>Lista gerada pelo código exemplo</figcaption>
             </figure>
 
-            <p>Os elementos de uma lista também podem ser numerados. Estes items também podem conter uma outra lista numerada
-              dentro da mesma, como no exemplo dado em cima. Em vez da utilização do código itemize, é colocado {dentro das
+            <p>Os elementos de uma lista também podem ser numerados. Estes items também podem conter uma outra lista
+              numerada
+              dentro da mesma, como no exemplo dado em cima. Em vez da utilização do código itemize, é colocado {dentro
+              das
               chavetas} o código
               <b>enumerate</b>.</p>
             <pre>
@@ -160,7 +174,8 @@
             <h3>Tabelas</h3>
             <br>
 
-            <p>Tabelas podem ser usadas como forma de listagem ou se forem mais complexas, uma ferramenta de comparação ou de
+            <p>Tabelas podem ser usadas como forma de listagem ou se forem mais complexas, uma ferramenta de comparação
+              ou de
               fornecimento de informação compacta. LaTeX permite-nos a criação de todo o tipo de tabelas.</p>
             <pre>
 \begin{center}
@@ -196,17 +211,20 @@
 
             <p>Como se pode verificar, acrescentar o símbolo
               <b>|</b> e o código
-              <b>\hline</b> em certas posições específicas do código da tabela, os elementos aparecem separados por tabelas.</p>
+              <b>\hline</b> em certas posições específicas do código da tabela, os elementos aparecem separados por
+              tabelas.</p>
 
             <p>Outras modificações simples podem ser feitas substituíndo a letra
               <b>c</b>, que neste código está a centralizar os elementos da tabela, pela letra
               <b>l</b> ou
               <b>r</b> que irão alinhar o texto à esquerda e à direita respetivamente. O código
-              <b>\hline</b> coloca uma linha horizontal nos limites da tabela. Isto pode ser usado um número ilimitado de vezes.
+              <b>\hline</b> coloca uma linha horizontal nos limites da tabela. Isto pode ser usado um número ilimitado
+              de vezes.
               O símbolo
               <b>&</b> separa os elementos da tabela e para terminar uma linha na tabela, e delimitar a mesma, usa-se
               <b>\\</b>.</p>
-            <p>Várias alterações podem ser feitas a uma tabela. Os exemplos dados são tabelas simples, porque LaTeX oferece
+            <p>Várias alterações podem ser feitas a uma tabela. Os exemplos dados são tabelas simples, porque LaTeX
+              oferece
               infinitas possibilidades de customização para a criação de tabelas.</p>
 
             <p>Para mais informação sobre a criação de tabelas em LaTeX,
@@ -221,12 +239,16 @@
             <h3>Imagens</h3>
             <br>
 
-            <p>LaTeX Também permite a inserção de imagens. Para tal é necessário a inicialização de uma nova package, usando
+            <p>LaTeX Também permite a inserção de imagens. Para tal é necessário a inicialização de uma nova package,
+              usando
               o código
               <b>\usepackage{</b>graphicx
-              <b>}</b>. Como a inserção de imagens invoca um ficheiro de imagem, é necessário indicar o seu path. Isso pode
-              ser feito no momento de invocação do ficheiro, mas como alternativa, se todos os ficheiros de imagem estiverem
-              contidos no mesmo diretório, é possível definir o path no início do documento, para facilitar a invocação das
+              <b>}</b>. Como a inserção de imagens invoca um ficheiro de imagem, é necessário indicar o seu path. Isso
+              pode
+              ser feito no momento de invocação do ficheiro, mas como alternativa, se todos os ficheiros de imagem
+              estiverem
+              contidos no mesmo diretório, é possível definir o path no início do documento, para facilitar a invocação
+              das
               imagens quando for necessário. Isto é possível através do comando
               <b>\graphicspath{ {</b>path
               <b>} }</b>.</p>
@@ -242,16 +264,19 @@ Universidade de Aveiro. A imagem foi retirada do site da UA (ua.pt).
               <figcaption>Imagem inserida pelo código exemplo</figcaption>
             </figure>
 
-            <p>No caso do exemplo, como o ficheiro utilizado tinha uma dimensão demasiado grande, diminui-se a escala para ficar
+            <p>No caso do exemplo, como o ficheiro utilizado tinha uma dimensão demasiado grande, diminui-se a escala
+              para ficar
               do tamanho desejado. Isto é possível através da extensão
               <b>[scale=</b>escala pretendida
               <b>]</b>.</p>
 
-            <p>É também possível formatar a imagem como o utilizador desejar. Em vez da extensão scale usa-se o controlo de
+            <p>É também possível formatar a imagem como o utilizador desejar. Em vez da extensão scale usa-se o
+              controlo de
               largura
               <b>widht=xcm</b> e o controlo de comprimento
               <b>height=ycm</b> e controlo de rotação
-              <b>angle=z</b> (x, y, e z serão valores introduzidos pelo redator do documento, numa unidade qualquer). Isto permite
+              <b>angle=z</b> (x, y, e z serão valores introduzidos pelo redator do documento, numa unidade qualquer).
+              Isto permite
               ao utilizador distorcer a imagem como for necessário.</p>
 
             <pre>
@@ -265,7 +290,8 @@ A imagem utilizada em cima ira agora aparecer distorcida
             </figure>
 
             <p>Para mais informação sobre a inserção de imagens e transformação das mesmas
-              <a href="https://www.sharelatex.com/learn/Inserting_Images">visite a secção de imagens da página ShareLatex</a>.</p>
+              <a href="https://www.sharelatex.com/learn/Inserting_Images">visite a secção de imagens da página
+                ShareLatex</a>.</p>
           </div>
         </div>
       </div>

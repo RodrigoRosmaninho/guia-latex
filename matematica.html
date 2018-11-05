@@ -23,6 +23,17 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23807557-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23807557-2');
+  </script>
+
+
 </head>
 
 <body>
@@ -84,11 +95,14 @@
           <a id="quizLink" href="quiz.html">questionário!</a>
         </div>
 
-        <p>Uma das funcionalidades mais atrativas do LaTeX para a comunidade científica é a escrita de fórmulas matemáticas
-          complexas de forma fácil e com apresentação correta. É especialmente útil para fórmulas com contenham símbolos
+        <p>Uma das funcionalidades mais atrativas do LaTeX para a comunidade científica é a escrita de fórmulas
+          matemáticas
+          complexas de forma fácil e com apresentação correta. É especialmente útil para fórmulas com contenham
+          símbolos
           pouco usados no dia-a-dia.</p>
 
-        <p>Equações básicas em LaTeX são fácilmente ’programáveis’, como se pode ver no exemplo seguinte (Teorema de Pitágoras):</p>
+        <p>Equações básicas em LaTeX são fácilmente ’programáveis’, como se pode ver no exemplo seguinte (Teorema de
+          Pitágoras):</p>
 
         <pre>
 \[ x^2 + y^2 = z^2 \]</pre>
@@ -96,7 +110,8 @@
         <br>
         <img class="center" src="http://latex.codecogs.com/gif.latex?x^2 + y^2 = z^2" border="0" />
 
-        <p id="acima_do_indice">No entanto, a forma mais correta de incluir fórmulas num documento é usando o modo de matemática.
+        <p id="acima_do_indice">No entanto, a forma mais correta de incluir fórmulas num documento é usando o modo de
+          matemática.
         </p>
 
         <br>
@@ -109,9 +124,11 @@
 
         <br>
         <h5 class="seccao" id="3.1">Modo de matemática</h5>
-        <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#acima_do_indice'">Ir para o índice</button>
+        <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#acima_do_indice'">Ir
+          para o índice</button>
 
-        <p>O LaTeX permite a escrita de fórmulas matemáticas em dois modos distintos. Estes são o modo inline, e o modo display.
+        <p>O LaTeX permite a escrita de fórmulas matemáticas em dois modos distintos. Estes são o modo inline, e o modo
+          display.
           A diferença entre eles pode ser verificada no exemplo seguinte:</p>
 
         <pre>
@@ -141,12 +158,15 @@ A equivalencia massa-energia e descrita pela famosa equacao $$E=mc^2$$,
           <b>\[ ... \], $$ ... $$, \begin{displaymath} ... \end{displaymath}</b>
         </p>
 
-        <p>Como já foi possível verificar, o símbolo ' ^ ' serve, no modo matemático do L A TEX, para escrever expoentes em
-          equações. Existe outro carater especial digno de referência, ' _ '. Este tem o propósito de indicar um índice.</p>
+        <p>Como já foi possível verificar, o símbolo ' ^ ' serve, no modo matemático do L A TEX, para escrever
+          expoentes em
+          equações. Existe outro carater especial digno de referência, ' _ '. Este tem o propósito de indicar um
+          índice.</p>
 
         <br>
         <h5 class="seccao" id="3.2">Símbolos matemáticos</h5>
-        <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#acima_do_indice'">Ir para o índice</button>
+        <button type="button" class="btn btn-primary btn-sm float-right" onclick="location.href='#acima_do_indice'">Ir
+          para o índice</button>
 
         <p>Alguns exemplos de símbolos matemáticos incluídos no LaTeX podem ser encontrados nas tabelas que se seguem:</p>
 
